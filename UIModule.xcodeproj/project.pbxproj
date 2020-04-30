@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A221E1B2245B19B500AD0D86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1B1245B19B500AD0D86 /* AppDelegate.m */; };
+		A221E1B5245B19B500AD0D86 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1B4245B19B500AD0D86 /* SceneDelegate.m */; };
+		A221E1B8245B19B500AD0D86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1B7245B19B500AD0D86 /* ViewController.m */; };
+		A221E1BB245B19B500AD0D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A221E1B9245B19B500AD0D86 /* Main.storyboard */; };
+		A221E1BD245B19B900AD0D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A221E1BC245B19B900AD0D86 /* Assets.xcassets */; };
+		A221E1C0245B19B900AD0D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A221E1BE245B19B900AD0D86 /* LaunchScreen.storyboard */; };
+		A221E1C3245B19B900AD0D86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1C2245B19B900AD0D86 /* main.m */; };
+		A221E1E2245B1EF700AD0D86 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1E1245B1EF700AD0D86 /* BaseViewController.m */; };
+		A221E1E8245B1F6A00AD0D86 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1E7245B1F6900AD0D86 /* BaseCollectionViewController.m */; };
+		A221E1EB245B1F8000AD0D86 /* Demo0CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1EA245B1F8000AD0D86 /* Demo0CollectionViewController.m */; };
+		A221E1F4245B22DC00AD0D86 /* Demo0Service.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1F3245B22DC00AD0D86 /* Demo0Service.m */; };
+		A221E1FD245B23BC00AD0D86 /* UIModule0Model.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1FC245B23BC00AD0D86 /* UIModule0Model.m */; };
+		A221E200245B23F300AD0D86 /* UIModule0CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E1FF245B23F300AD0D86 /* UIModule0CollectionViewCell.m */; };
+		A221E203245B241500AD0D86 /* UIModule0Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E202245B241500AD0D86 /* UIModule0Layout.m */; };
+		A221E20C245B320C00AD0D86 /* Demo0Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E20B245B320C00AD0D86 /* Demo0Layout.m */; };
+		A221E20F245B341B00AD0D86 /* Demo0Model.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E20E245B341B00AD0D86 /* Demo0Model.m */; };
+		A221E222245B410300AD0D86 /* UIModule2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E212245B410300AD0D86 /* UIModule2Model.m */; };
+		A221E223245B410300AD0D86 /* UIModule2Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E215245B410300AD0D86 /* UIModule2Layout.m */; };
+		A221E224245B410300AD0D86 /* UIModule2CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E218245B410300AD0D86 /* UIModule2CollectionViewCell.m */; };
+		A221E225245B410300AD0D86 /* UIModule1Model.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E21D245B410300AD0D86 /* UIModule1Model.m */; };
+		A221E226245B410300AD0D86 /* UIModule1Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E21E245B410300AD0D86 /* UIModule1Layout.m */; };
+		A221E227245B410300AD0D86 /* UIModule1CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E221245B410300AD0D86 /* UIModule1CollectionViewCell.m */; };
+		A221E22A245B438E00AD0D86 /* UIModuleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E229245B438E00AD0D86 /* UIModuleHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A221E1AD245B19B500AD0D86 /* UIModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A221E1B0245B19B500AD0D86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A221E1B1245B19B500AD0D86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A221E1B3245B19B500AD0D86 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		A221E1B4245B19B500AD0D86 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		A221E1B6245B19B500AD0D86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A221E1B7245B19B500AD0D86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A221E1BA245B19B500AD0D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A221E1BC245B19B900AD0D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A221E1BF245B19B900AD0D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A221E1C1245B19B900AD0D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A221E1C2245B19B900AD0D86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A221E1D0245B1C2000AD0D86 /* UIModuleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleCollectionViewCell.h; sourceTree = "<group>"; };
+		A221E1D3245B1CA400AD0D86 /* UIModuleCollectionViewCellLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleCollectionViewCellLayout.h; sourceTree = "<group>"; };
+		A221E1E0245B1EF700AD0D86 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A221E1E1245B1EF700AD0D86 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A221E1E6245B1F6900AD0D86 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
+		A221E1E7245B1F6900AD0D86 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
+		A221E1E9245B1F8000AD0D86 /* Demo0CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo0CollectionViewController.h; sourceTree = "<group>"; };
+		A221E1EA245B1F8000AD0D86 /* Demo0CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo0CollectionViewController.m; sourceTree = "<group>"; };
+		A221E1F2245B22DC00AD0D86 /* Demo0Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo0Service.h; sourceTree = "<group>"; };
+		A221E1F3245B22DC00AD0D86 /* Demo0Service.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo0Service.m; sourceTree = "<group>"; };
+		A221E1FB245B23BC00AD0D86 /* UIModule0Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModule0Model.h; sourceTree = "<group>"; };
+		A221E1FC245B23BC00AD0D86 /* UIModule0Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIModule0Model.m; sourceTree = "<group>"; };
+		A221E1FE245B23F300AD0D86 /* UIModule0CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModule0CollectionViewCell.h; sourceTree = "<group>"; };
+		A221E1FF245B23F300AD0D86 /* UIModule0CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIModule0CollectionViewCell.m; sourceTree = "<group>"; };
+		A221E201245B241500AD0D86 /* UIModule0Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModule0Layout.h; sourceTree = "<group>"; };
+		A221E202245B241500AD0D86 /* UIModule0Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIModule0Layout.m; sourceTree = "<group>"; };
+		A221E204245B30BC00AD0D86 /* UIModuleMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleMacro.h; sourceTree = "<group>"; };
+		A221E207245B319F00AD0D86 /* UIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModule.h; sourceTree = "<group>"; };
+		A221E20A245B320C00AD0D86 /* Demo0Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo0Layout.h; sourceTree = "<group>"; };
+		A221E20B245B320C00AD0D86 /* Demo0Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo0Layout.m; sourceTree = "<group>"; };
+		A221E20D245B341B00AD0D86 /* Demo0Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo0Model.h; sourceTree = "<group>"; };
+		A221E20E245B341B00AD0D86 /* Demo0Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo0Model.m; sourceTree = "<group>"; };
+		A221E212245B410300AD0D86 /* UIModule2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModule2Model.m; sourceTree = "<group>"; };
+		A221E213245B410300AD0D86 /* UIModule2Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModule2Layout.h; sourceTree = "<group>"; };
+		A221E214245B410300AD0D86 /* UIModule2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModule2Model.h; sourceTree = "<group>"; };
+		A221E215245B410300AD0D86 /* UIModule2Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModule2Layout.m; sourceTree = "<group>"; };
+		A221E217245B410300AD0D86 /* UIModule2CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModule2CollectionViewCell.h; sourceTree = "<group>"; };
+		A221E218245B410300AD0D86 /* UIModule2CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModule2CollectionViewCell.m; sourceTree = "<group>"; };
+		A221E21B245B410300AD0D86 /* UIModule1Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModule1Layout.h; sourceTree = "<group>"; };
+		A221E21C245B410300AD0D86 /* UIModule1Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModule1Model.h; sourceTree = "<group>"; };
+		A221E21D245B410300AD0D86 /* UIModule1Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModule1Model.m; sourceTree = "<group>"; };
+		A221E21E245B410300AD0D86 /* UIModule1Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModule1Layout.m; sourceTree = "<group>"; };
+		A221E220245B410300AD0D86 /* UIModule1CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModule1CollectionViewCell.h; sourceTree = "<group>"; };
+		A221E221245B410300AD0D86 /* UIModule1CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModule1CollectionViewCell.m; sourceTree = "<group>"; };
+		A221E228245B438E00AD0D86 /* UIModuleHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleHelper.h; sourceTree = "<group>"; };
+		A221E229245B438E00AD0D86 /* UIModuleHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIModuleHelper.m; sourceTree = "<group>"; };
+		A221E22B245B444000AD0D86 /* UIModuleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleData.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A221E1AA245B19B500AD0D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A221E1A4245B19B500AD0D86 = {
+			isa = PBXGroup;
+			children = (
+				A221E1AF245B19B500AD0D86 /* UIModule */,
+				A221E1AE245B19B500AD0D86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A221E1AE245B19B500AD0D86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1AD245B19B500AD0D86 /* UIModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A221E1AF245B19B500AD0D86 /* UIModule */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1C9245B1A2000AD0D86 /* Module */,
+				A221E1D6245B1E4F00AD0D86 /* Demos */,
+				A221E1B0245B19B500AD0D86 /* AppDelegate.h */,
+				A221E1B1245B19B500AD0D86 /* AppDelegate.m */,
+				A221E1B3245B19B500AD0D86 /* SceneDelegate.h */,
+				A221E1B4245B19B500AD0D86 /* SceneDelegate.m */,
+				A221E1B6245B19B500AD0D86 /* ViewController.h */,
+				A221E1B7245B19B500AD0D86 /* ViewController.m */,
+				A221E1B9245B19B500AD0D86 /* Main.storyboard */,
+				A221E1BC245B19B900AD0D86 /* Assets.xcassets */,
+				A221E1BE245B19B900AD0D86 /* LaunchScreen.storyboard */,
+				A221E1C1245B19B900AD0D86 /* Info.plist */,
+				A221E1C2245B19B900AD0D86 /* main.m */,
+			);
+			path = UIModule;
+			sourceTree = "<group>";
+		};
+		A221E1C9245B1A2000AD0D86 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1D0245B1C2000AD0D86 /* UIModuleCollectionViewCell.h */,
+				A221E1D3245B1CA400AD0D86 /* UIModuleCollectionViewCellLayout.h */,
+				A221E22B245B444000AD0D86 /* UIModuleData.h */,
+				A221E204245B30BC00AD0D86 /* UIModuleMacro.h */,
+				A221E207245B319F00AD0D86 /* UIModule.h */,
+				A221E228245B438E00AD0D86 /* UIModuleHelper.h */,
+				A221E229245B438E00AD0D86 /* UIModuleHelper.m */,
+				A221E1F8245B237800AD0D86 /* UIModule0 */,
+				A221E219245B410300AD0D86 /* UIModule1 */,
+				A221E210245B410300AD0D86 /* UIModule2 */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A221E1D6245B1E4F00AD0D86 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1DF245B1EE800AD0D86 /* Base */,
+				A221E1D7245B1E9C00AD0D86 /* Demo0 */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		A221E1D7245B1E9C00AD0D86 /* Demo0 */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1D8245B1E9C00AD0D86 /* Controller */,
+				A221E1D9245B1E9C00AD0D86 /* Model */,
+				A221E1DA245B1E9C00AD0D86 /* View */,
+				A221E1DB245B1E9C00AD0D86 /* Service */,
+			);
+			path = Demo0;
+			sourceTree = "<group>";
+		};
+		A221E1D8245B1E9C00AD0D86 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1E9245B1F8000AD0D86 /* Demo0CollectionViewController.h */,
+				A221E1EA245B1F8000AD0D86 /* Demo0CollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A221E1D9245B1E9C00AD0D86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A221E20A245B320C00AD0D86 /* Demo0Layout.h */,
+				A221E20B245B320C00AD0D86 /* Demo0Layout.m */,
+				A221E20D245B341B00AD0D86 /* Demo0Model.h */,
+				A221E20E245B341B00AD0D86 /* Demo0Model.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A221E1DA245B1E9C00AD0D86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A221E1DB245B1E9C00AD0D86 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1F2245B22DC00AD0D86 /* Demo0Service.h */,
+				A221E1F3245B22DC00AD0D86 /* Demo0Service.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A221E1DF245B1EE800AD0D86 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1E0245B1EF700AD0D86 /* BaseViewController.h */,
+				A221E1E1245B1EF700AD0D86 /* BaseViewController.m */,
+				A221E1E6245B1F6900AD0D86 /* BaseCollectionViewController.h */,
+				A221E1E7245B1F6900AD0D86 /* BaseCollectionViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A221E1F8245B237800AD0D86 /* UIModule0 */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1F9245B237800AD0D86 /* Model */,
+				A221E1FA245B237800AD0D86 /* View */,
+			);
+			path = UIModule0;
+			sourceTree = "<group>";
+		};
+		A221E1F9245B237800AD0D86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1FB245B23BC00AD0D86 /* UIModule0Model.h */,
+				A221E1FC245B23BC00AD0D86 /* UIModule0Model.m */,
+				A221E201245B241500AD0D86 /* UIModule0Layout.h */,
+				A221E202245B241500AD0D86 /* UIModule0Layout.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A221E1FA245B237800AD0D86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A221E1FE245B23F300AD0D86 /* UIModule0CollectionViewCell.h */,
+				A221E1FF245B23F300AD0D86 /* UIModule0CollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A221E210245B410300AD0D86 /* UIModule2 */ = {
+			isa = PBXGroup;
+			children = (
+				A221E211245B410300AD0D86 /* Model */,
+				A221E216245B410300AD0D86 /* View */,
+			);
+			path = UIModule2;
+			sourceTree = "<group>";
+		};
+		A221E211245B410300AD0D86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A221E214245B410300AD0D86 /* UIModule2Model.h */,
+				A221E212245B410300AD0D86 /* UIModule2Model.m */,
+				A221E213245B410300AD0D86 /* UIModule2Layout.h */,
+				A221E215245B410300AD0D86 /* UIModule2Layout.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A221E216245B410300AD0D86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A221E217245B410300AD0D86 /* UIModule2CollectionViewCell.h */,
+				A221E218245B410300AD0D86 /* UIModule2CollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A221E219245B410300AD0D86 /* UIModule1 */ = {
+			isa = PBXGroup;
+			children = (
+				A221E21A245B410300AD0D86 /* Model */,
+				A221E21F245B410300AD0D86 /* View */,
+			);
+			path = UIModule1;
+			sourceTree = "<group>";
+		};
+		A221E21A245B410300AD0D86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A221E21C245B410300AD0D86 /* UIModule1Model.h */,
+				A221E21D245B410300AD0D86 /* UIModule1Model.m */,
+				A221E21B245B410300AD0D86 /* UIModule1Layout.h */,
+				A221E21E245B410300AD0D86 /* UIModule1Layout.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A221E21F245B410300AD0D86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A221E220245B410300AD0D86 /* UIModule1CollectionViewCell.h */,
+				A221E221245B410300AD0D86 /* UIModule1CollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A221E1AC245B19B500AD0D86 /* UIModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A221E1C6245B19B900AD0D86 /* Build configuration list for PBXNativeTarget "UIModule" */;
+			buildPhases = (
+				A221E1A9245B19B500AD0D86 /* Sources */,
+				A221E1AA245B19B500AD0D86 /* Frameworks */,
+				A221E1AB245B19B500AD0D86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIModule;
+			productName = UIModule;
+			productReference = A221E1AD245B19B500AD0D86 /* UIModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A221E1A5245B19B500AD0D86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = loser;
+				TargetAttributes = {
+					A221E1AC245B19B500AD0D86 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A221E1A8245B19B500AD0D86 /* Build configuration list for PBXProject "UIModule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A221E1A4245B19B500AD0D86;
+			productRefGroup = A221E1AE245B19B500AD0D86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A221E1AC245B19B500AD0D86 /* UIModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A221E1AB245B19B500AD0D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A221E1C0245B19B900AD0D86 /* LaunchScreen.storyboard in Resources */,
+				A221E1BD245B19B900AD0D86 /* Assets.xcassets in Resources */,
+				A221E1BB245B19B500AD0D86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A221E1A9245B19B500AD0D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A221E223245B410300AD0D86 /* UIModule2Layout.m in Sources */,
+				A221E1FD245B23BC00AD0D86 /* UIModule0Model.m in Sources */,
+				A221E20F245B341B00AD0D86 /* Demo0Model.m in Sources */,
+				A221E22A245B438E00AD0D86 /* UIModuleHelper.m in Sources */,
+				A221E224245B410300AD0D86 /* UIModule2CollectionViewCell.m in Sources */,
+				A221E1B8245B19B500AD0D86 /* ViewController.m in Sources */,
+				A221E225245B410300AD0D86 /* UIModule1Model.m in Sources */,
+				A221E200245B23F300AD0D86 /* UIModule0CollectionViewCell.m in Sources */,
+				A221E20C245B320C00AD0D86 /* Demo0Layout.m in Sources */,
+				A221E227245B410300AD0D86 /* UIModule1CollectionViewCell.m in Sources */,
+				A221E1F4245B22DC00AD0D86 /* Demo0Service.m in Sources */,
+				A221E1E2245B1EF700AD0D86 /* BaseViewController.m in Sources */,
+				A221E1E8245B1F6A00AD0D86 /* BaseCollectionViewController.m in Sources */,
+				A221E1B2245B19B500AD0D86 /* AppDelegate.m in Sources */,
+				A221E203245B241500AD0D86 /* UIModule0Layout.m in Sources */,
+				A221E222245B410300AD0D86 /* UIModule2Model.m in Sources */,
+				A221E1C3245B19B900AD0D86 /* main.m in Sources */,
+				A221E226245B410300AD0D86 /* UIModule1Layout.m in Sources */,
+				A221E1B5245B19B500AD0D86 /* SceneDelegate.m in Sources */,
+				A221E1EB245B1F8000AD0D86 /* Demo0CollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A221E1B9245B19B500AD0D86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A221E1BA245B19B500AD0D86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A221E1BE245B19B900AD0D86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A221E1BF245B19B900AD0D86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A221E1C4245B19B900AD0D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A221E1C5245B19B900AD0D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A221E1C7245B19B900AD0D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UIModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = loser.UIModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A221E1C8245B19B900AD0D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UIModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = loser.UIModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A221E1A8245B19B500AD0D86 /* Build configuration list for PBXProject "UIModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A221E1C4245B19B900AD0D86 /* Debug */,
+				A221E1C5245B19B900AD0D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A221E1C6245B19B900AD0D86 /* Build configuration list for PBXNativeTarget "UIModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A221E1C7245B19B900AD0D86 /* Debug */,
+				A221E1C8245B19B900AD0D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A221E1A5245B19B500AD0D86 /* Project object */;
+}
