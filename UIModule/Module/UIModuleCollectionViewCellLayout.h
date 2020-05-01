@@ -7,19 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIModuleCollectionReusableViewLayout.h"
+#import "UIModuleCollectionViewCellData.h"
 #import <UIKit/UIKit.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol UIModuleData;
-@protocol UIModuleCollectionViewCellLayout <NSObject>
+@protocol UIModuleCollectionReusableViewData;
+@protocol UIModuleCollectionViewCellLayout <UIModuleCollectionReusableViewLayout>
 @required
 @property (nonatomic, copy) NSString *reuseIdentifier;
 @property (nonatomic, assign) CGSize size;
-- (void)layout;
 @optional
-@property (nonatomic, strong) id <UIModuleData> data;
+@property (nonatomic, strong) id <UIModuleCollectionViewCellData> data;
 @end
 
 

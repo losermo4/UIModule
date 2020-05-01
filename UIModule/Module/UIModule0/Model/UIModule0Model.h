@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UIModuleData.h"
+#import "UIModuleCollectionViewCellData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIModule0Model : NSObject<UIModuleData>
+@interface UIModule0Model : NSObject<UIModuleCollectionViewCellData>
 @property (nonatomic, copy) NSString *name;
 @end
 

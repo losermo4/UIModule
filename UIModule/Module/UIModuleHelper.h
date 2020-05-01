@@ -13,10 +13,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIModuleHelper : NSObject
 
-+ (id <UIModuleCollectionViewCellLayout>)layoutWithType:(NSString *)type data:(id<UIModuleData>)data;
+@end
 
-+ (NSArray *)ignoreEmptyDataTypes;
+
+@interface UIModuleHelper (UICollectionViewHelper)
+
+/// 根据CellType获取 cellLayout
++ (id <UIModuleCollectionViewCellLayout>)cellLayoutWithCellType:(NSString *)cellType cellData:(id<UIModuleCollectionViewCellData>)cellData;
+/// 特殊类型的 不需要数据源
++ (NSArray *)ignoreEmptyCellDataToCellTypes;
+/// 根据cellType 获取数据模型class
++ (Class)moduleDataClassWithCellType:(NSString *)cellType;
 
 @end
+
 
 NS_ASSUME_NONNULL_END

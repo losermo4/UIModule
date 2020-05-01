@@ -30,6 +30,8 @@
 		A221E226245B410300AD0D86 /* UIModule1Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E21E245B410300AD0D86 /* UIModule1Layout.m */; };
 		A221E227245B410300AD0D86 /* UIModule1CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E221245B410300AD0D86 /* UIModule1CollectionViewCell.m */; };
 		A221E22A245B438E00AD0D86 /* UIModuleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E229245B438E00AD0D86 /* UIModuleHelper.m */; };
+		A221E248245C902900AD0D86 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E245245C902900AD0D86 /* NSObject+YYModel.m */; };
+		A221E249245C902900AD0D86 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A221E246245C902900AD0D86 /* YYClassInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +83,17 @@
 		A221E221245B410300AD0D86 /* UIModule1CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModule1CollectionViewCell.m; sourceTree = "<group>"; };
 		A221E228245B438E00AD0D86 /* UIModuleHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleHelper.h; sourceTree = "<group>"; };
 		A221E229245B438E00AD0D86 /* UIModuleHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIModuleHelper.m; sourceTree = "<group>"; };
-		A221E22B245B444000AD0D86 /* UIModuleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleData.h; sourceTree = "<group>"; };
+		A221E22E245C852B00AD0D86 /* UIModuleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleView.h; sourceTree = "<group>"; };
+		A221E231245C858E00AD0D86 /* UIModuleCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleCollectionReusableView.h; sourceTree = "<group>"; };
+		A221E234245C866400AD0D86 /* UIModuleCollectionReusableViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleCollectionReusableViewData.h; sourceTree = "<group>"; };
+		A221E237245C867B00AD0D86 /* UIModuleViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleViewData.h; sourceTree = "<group>"; };
+		A221E23A245C870200AD0D86 /* UIModuleCollectionViewCellData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleCollectionViewCellData.h; sourceTree = "<group>"; };
+		A221E23D245C874900AD0D86 /* UIModuleViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleViewLayout.h; sourceTree = "<group>"; };
+		A221E240245C878400AD0D86 /* UIModuleCollectionReusableViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleCollectionReusableViewLayout.h; sourceTree = "<group>"; };
+		A221E244245C902900AD0D86 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		A221E245245C902900AD0D86 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		A221E246245C902900AD0D86 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		A221E247245C902900AD0D86 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +146,15 @@
 		A221E1C9245B1A2000AD0D86 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				A221E22E245C852B00AD0D86 /* UIModuleView.h */,
+				A221E231245C858E00AD0D86 /* UIModuleCollectionReusableView.h */,
 				A221E1D0245B1C2000AD0D86 /* UIModuleCollectionViewCell.h */,
+				A221E237245C867B00AD0D86 /* UIModuleViewData.h */,
+				A221E234245C866400AD0D86 /* UIModuleCollectionReusableViewData.h */,
+				A221E23A245C870200AD0D86 /* UIModuleCollectionViewCellData.h */,
+				A221E23D245C874900AD0D86 /* UIModuleViewLayout.h */,
+				A221E240245C878400AD0D86 /* UIModuleCollectionReusableViewLayout.h */,
 				A221E1D3245B1CA400AD0D86 /* UIModuleCollectionViewCellLayout.h */,
-				A221E22B245B444000AD0D86 /* UIModuleData.h */,
 				A221E204245B30BC00AD0D86 /* UIModuleMacro.h */,
 				A221E207245B319F00AD0D86 /* UIModule.h */,
 				A221E228245B438E00AD0D86 /* UIModuleHelper.h */,
@@ -151,6 +169,7 @@
 		A221E1D6245B1E4F00AD0D86 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				A221E243245C902900AD0D86 /* YYModel */,
 				A221E1DF245B1EE800AD0D86 /* Base */,
 				A221E1D7245B1E9C00AD0D86 /* Demo0 */,
 			);
@@ -302,6 +321,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A221E243245C902900AD0D86 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				A221E244245C902900AD0D86 /* YYClassInfo.h */,
+				A221E246245C902900AD0D86 /* YYClassInfo.m */,
+				A221E247245C902900AD0D86 /* NSObject+YYModel.h */,
+				A221E245245C902900AD0D86 /* NSObject+YYModel.m */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,8 +411,10 @@
 				A221E225245B410300AD0D86 /* UIModule1Model.m in Sources */,
 				A221E200245B23F300AD0D86 /* UIModule0CollectionViewCell.m in Sources */,
 				A221E20C245B320C00AD0D86 /* Demo0Layout.m in Sources */,
+				A221E248245C902900AD0D86 /* NSObject+YYModel.m in Sources */,
 				A221E227245B410300AD0D86 /* UIModule1CollectionViewCell.m in Sources */,
 				A221E1F4245B22DC00AD0D86 /* Demo0Service.m in Sources */,
+				A221E249245C902900AD0D86 /* YYClassInfo.m in Sources */,
 				A221E1E2245B1EF700AD0D86 /* BaseViewController.m in Sources */,
 				A221E1E8245B1F6A00AD0D86 /* BaseCollectionViewController.m in Sources */,
 				A221E1B2245B19B500AD0D86 /* AppDelegate.m in Sources */,

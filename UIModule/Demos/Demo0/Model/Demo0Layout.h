@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Demo0Layout : NSObject
 
+@property (nonatomic, strong) NSDictionary *map;
+
 @property (nonatomic, strong) Demo0Model *model;
 @property (nonatomic, strong) NSArray <id <UIModuleCollectionViewCellLayout>> *layouts;
 - (void)layout;

@@ -6,11 +6,19 @@
 //  Copyright © 2020 loser. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "UIModuleMacro.h"
+
+#import "UIModuleView.h"
+#import "UIModuleCollectionReusableView.h"
 #import "UIModuleCollectionViewCell.h"
+#import "UIModuleViewData.h"
+#import "UIModuleCollectionReusableViewData.h"
+#import "UIModuleCollectionViewCellData.h"
+#import "UIModuleViewLayout.h"
+#import "UIModuleCollectionReusableViewLayout.h"
 #import "UIModuleCollectionViewCellLayout.h"
-#import "UIModuleData.h"
+
+
 #import "UIModule0CollectionViewCell.h"
 #import "UIModule1CollectionViewCell.h"
 #import "UIModule2CollectionViewCell.h"

@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIModule0Model.h"
 
 /// 后台返回数据模型
 NS_ASSUME_NONNULL_BEGIN
 
-@class Demo0Item0Model, Demo0Item1Model, Demo0Item2Model, UIModule0Model;
+@class Demo0Item0Model, Demo0Item1Model, Demo0Item2Model;
 @interface Demo0Model : NSObject
 @property (nonatomic, copy) NSString *page;
 @property (nonatomic, strong) Demo0Item0Model *section0;

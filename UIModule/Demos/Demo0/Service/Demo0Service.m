@@ -64,6 +64,7 @@
     
     Demo0Layout *layout = [Demo0Layout new];
     layout.model = model;
+    layout.map = map;
     [layout layout];
     if (success) {
         success(layout);

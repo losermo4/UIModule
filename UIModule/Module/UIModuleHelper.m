@@ -10,37 +10,44 @@
 
 @implementation UIModuleHelper
 
-+ (id<UIModuleCollectionViewCellLayout>)layoutWithType:(NSString *)type data:(id<UIModuleData>)data {
+
+@end
+
+
+
+@implementation UIModuleHelper (UICollectionViewHelper)
+
++ (id <UIModuleCollectionViewCellLayout>)cellLayoutWithCellType:(NSString *)cellType cellData:(id<UIModuleCollectionViewCellData>)cellData {
     id <UIModuleCollectionViewCellLayout> cellLayout;
-    BOOL isIgnoreDataType = [[self ignoreEmptyDataTypes] containsObject:type];
-    if (!data && !isIgnoreDataType) {
+    BOOL isIgnoreDataType = [[self ignoreEmptyCellDataToCellTypes] containsObject:cellType];
+    if (!cellData && !isIgnoreDataType) {
         NSAssert(YES, @"空数据");
         return cellLayout;
     }
-    if (!isIgnoreDataType && ![data conformsToProtocol:@protocol(UIModuleData)]) {
+    if (!isIgnoreDataType && ![cellData conformsToProtocol:@protocol(UIModuleCollectionViewCellData)]) {
         NSAssert(YES, @"未定义的UIModule数据类型");
         return cellLayout;
     }
-    NSInteger typeNumber = type.integerValue;
+    NSInteger typeNumber = cellType.integerValue;
     switch (typeNumber) {
         case 1:
         {
             cellLayout = [UIModule0Layout new];
-            cellLayout.data = data;
+            cellLayout.data = cellData;
             [cellLayout layout];
         }
             break;
         case 2:
         {
             cellLayout = [UIModule1Layout new];
-            cellLayout.data = data;
+            cellLayout.data = cellData;
             [cellLayout layout];
         }
             break;
         case 3:
         {
             cellLayout = [UIModule2Layout new];
-            cellLayout.data = data;
+            cellLayout.data = cellData;
             [cellLayout layout];
 
         }
@@ -51,15 +58,35 @@
     }
     
     return cellLayout;
+
 }
 
-+ (NSArray *)ignoreEmptyDataTypes {
++ (NSArray *)ignoreEmptyCellDataToCellTypes {
     static NSArray *types;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         types = @[@"5", @"6", @"7"];
     });
     return types;
+}
+
++ (Class)moduleDataClassWithCellType:(NSString *)cellType {
+    NSInteger type = cellType.integerValue;
+    switch (type) {
+        case 1:
+            return [UIModule0Model class];
+            break;
+        case 2:
+            return [UIModule1Model class];
+            break;
+        case 3:
+            return [UIModule2Model class];
+            break;
+        default:
+            NSAssert(YES, @"未定义的UIModule数据类型");
+            return [NSObject class];
+            break;
+    }
 }
 
 @end

@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIModuleCollectionReusableView.h"
 #import "UIModuleCollectionViewCellLayout.h"
 
-@protocol UIModuleCollectionViewCell <NSObject>
-@optional
-@property (nonatomic, weak) id <NSObject> delegate;
+@protocol UIModuleCollectionViewCell <UIModuleCollectionReusableView>
 - (void)update:(id <UIModuleCollectionViewCellLayout>)cellLayout;
 @property (nonatomic, weak) NSIndexPath *indexPath;
 @end
