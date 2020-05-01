@@ -11,7 +11,7 @@
 
 @interface UIModule1CollectionViewCell ()
 
-@property (nonatomic, strong) UIModule1Layout *layout;
+@property (nonatomic, weak) id <UIModule1Layout> layout;
 @property (nonatomic, strong) UILabel *textLabel;
 
 @end
@@ -19,6 +19,7 @@
 
 @implementation UIModule1CollectionViewCell
 @synthesize delegate;
+@synthesize indexPath;
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -30,14 +31,14 @@
 
 - (void)onClick {
     id delegate = self.delegate;
-    if (delegate && [delegate respondsToSelector:@selector(module1Cell:didSelected:)]) {
-        [delegate module1Cell:self didSelected:self.layout];
+    if (delegate && [delegate respondsToSelector:@selector(module1Cell:didSelected:indexPath:)]) {
+        [delegate module1Cell:self didSelected:self.layout indexPath:self.indexPath];
     }
 }
 
 - (void)update:(id<UIModuleCollectionViewCellLayout>)cellLayout {
     if (self.layout == cellLayout) return;
-    self.layout = (UIModule1Layout *)cellLayout;
+    self.layout = (id)cellLayout;
     self.textLabel.text = self.layout.model.name;
     self.textLabel.frame = self.layout.nameRect;
 }

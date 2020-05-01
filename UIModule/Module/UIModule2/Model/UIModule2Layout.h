@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 extern NSString *kModule2CellReuseIdentifier;
 @protocol UIModule2Layout <UIModuleCollectionViewCellLayout>
-@property (nonatomic, strong) UIModule2Model *model;
+@property (nonatomic, weak) UIModule2Model *model;
 @property (nonatomic, assign) CGRect nameRect;
 @end
 

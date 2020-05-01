@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol UIModule1CollectionViewCellDelegate <NSObject>
 @optional
-- (void)module1Cell:(UIModule1CollectionViewCell *)module1Cell didSelected:(id <UIModule1Layout>)layout;
+- (void)module1Cell:(UIModule1CollectionViewCell *)module1Cell didSelected:(id <UIModule1Layout>)layout indexPath:(NSIndexPath *)indexPath;
 @end
 
 

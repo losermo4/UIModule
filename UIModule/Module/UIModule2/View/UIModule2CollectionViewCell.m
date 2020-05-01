@@ -11,7 +11,7 @@
 
 @interface UIModule2CollectionViewCell ()
 
-@property (nonatomic, strong) UIModule2Layout *layout;
+@property (nonatomic, weak) UIModule2Layout *layout;
 @property (nonatomic, strong) UILabel *textLabel;
 
 @end
@@ -19,6 +19,7 @@
 
 @implementation UIModule2CollectionViewCell
 @synthesize delegate;
+@synthesize indexPath;
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

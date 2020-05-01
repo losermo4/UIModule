@@ -45,6 +45,7 @@
     id <UIModuleCollectionViewCell> cell = [collectionView dequeueReusableCellWithReuseIdentifier:layout.reuseIdentifier forIndexPath:indexPath];
     [cell update:layout];
     cell.delegate = self;
+    cell.indexPath = indexPath;
     return (UICollectionViewCell *)cell;
 }
 
@@ -54,12 +55,12 @@
 
 #pragma mark -
 
-- (void)module0Cell:(UIModule0CollectionViewCell *)module0Cell didSelected:(id<UIModule0Layout>)layout {
+- (void)module0Cell:(UIModule0CollectionViewCell *)module0Cell didSelected:(UIModule1Layout *)layout {
     NSLog(@"%@", layout.model.name);
 }
 
-- (void)module1Cell:(UIModule1CollectionViewCell *)module1Cell didSelected:(id<UIModule1Layout>)layout {
-    NSLog(@"%@", layout.model.name);
+- (void)module1Cell:(UIModule1CollectionViewCell *)module1Cell didSelected:(id<UIModule1Layout>)layout indexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%@ %@", layout.model.name, indexPath);
 }
 
 - (void)module2Cell:(UIModule2CollectionViewCell *)module0Cell didSelected:(id<UIModule2Layout>)layout {
@@ -82,7 +83,6 @@
     [self.collectionView registerClass:[UIModule0CollectionViewCell class] forCellWithReuseIdentifier:kModule0CellReuseIdentifier];
     [self.collectionView registerClass:[UIModule1CollectionViewCell class] forCellWithReuseIdentifier:kModule1CellReuseIdentifier];
     [self.collectionView registerClass:[UIModule2CollectionViewCell class] forCellWithReuseIdentifier:kModule2CellReuseIdentifier];
-
 }
 
 

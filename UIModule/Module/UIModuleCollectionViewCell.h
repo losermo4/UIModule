@@ -13,5 +13,6 @@
 @optional
 @property (nonatomic, weak) id <NSObject> delegate;
 - (void)update:(id <UIModuleCollectionViewCellLayout>)cellLayout;
+@property (nonatomic, weak) NSIndexPath *indexPath;
 @end
 

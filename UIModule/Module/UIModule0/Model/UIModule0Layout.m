@@ -13,9 +13,7 @@ NSString * kModule0CellReuseIdentifier = @"kModule0CellReuseIdentifier";
 
 @implementation UIModule0Layout
 @synthesize size;
-@synthesize nameRect;
 @synthesize data;
-@synthesize model;
 @synthesize reuseIdentifier;
 
 - (void)layout {
