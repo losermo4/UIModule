@@ -11,7 +11,7 @@
 #import "UIModuleCollectionViewCellLayout.h"
 
 @protocol UIModuleCollectionViewCell <UIModuleCollectionReusableView>
-- (void)update:(id <UIModuleCollectionViewCellLayout>)cellLayout;
+@optional
 @property (nonatomic, weak) NSIndexPath *indexPath;
 @end
 

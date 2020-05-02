@@ -36,9 +36,9 @@
     }
 }
 
-- (void)update:(id<UIModuleCollectionViewCellLayout>)cellLayout {
-    if (self.layout == cellLayout) return;
-    self.layout = (id)cellLayout;
+- (void)update:(id<UIModuleViewLayout>)layout {
+    if (self.layout == layout) return;
+    self.layout = (id)layout;
     self.textLabel.text = self.layout.model.name;
     self.textLabel.frame = self.layout.nameRect;
 }

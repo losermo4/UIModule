@@ -19,8 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 @property (nonatomic, copy) NSString *reuseIdentifier;
 @property (nonatomic, assign) CGSize size;
-@optional
-@property (nonatomic, strong) id <UIModuleCollectionViewCellData> data;
 @end
 
 

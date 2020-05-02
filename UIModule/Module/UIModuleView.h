@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIModuleViewLayout.h"
 
 @protocol UIModuleView <NSObject>
 @optional
 @property (nonatomic, weak) id <NSObject> delegate;
+- (void)update:(id <UIModuleViewLayout>)layout;
 @end
 

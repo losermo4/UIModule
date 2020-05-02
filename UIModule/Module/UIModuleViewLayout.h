@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIModuleViewData.h"
+
 
 @protocol UIModuleViewLayout <NSObject>
+@optional
+@property (nonatomic, strong) id <UIModuleViewData> data;
 - (void)layout;
 @end

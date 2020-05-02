@@ -20,7 +20,7 @@ NSString * kModule2CellReuseIdentifier = @"kModule2CellReuseIdentifier";
 @synthesize reuseIdentifier;
 
 - (void)layout {
-    self.model = self.data;
+    self.model = (id)self.data;
     self.reuseIdentifier = kModule2CellReuseIdentifier;
     self.nameRect = CGRectMake(0, 0, kScreenWidth, 40);
     self.size = CGSizeMake(kScreenWidth, 40);

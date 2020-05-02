@@ -10,7 +10,7 @@
 #import "UIModuleHelper.h"
 #import "NSObject+YYModel.h"
 
-#define USE_DEFAULT_JSON 0
+#define USE_DEFAULT_JSON 1
 
 @implementation Demo0Layout
 

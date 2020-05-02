@@ -9,4 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @protocol UIModuleViewData <NSObject>
+@required
+@property (nonatomic, copy) NSString *type;
 @end

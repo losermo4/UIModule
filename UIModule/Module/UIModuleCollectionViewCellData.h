@@ -12,5 +12,4 @@
 
 
 @protocol UIModuleCollectionViewCellData <UIModuleCollectionReusableViewData>
-
 @end

@@ -9,5 +9,6 @@
 #import "UIModule0Model.h"
 
 @implementation UIModule0Model
+@synthesize type;
 
 @end

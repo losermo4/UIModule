@@ -94,6 +94,7 @@
 		A221E245245C902900AD0D86 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		A221E246245C902900AD0D86 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		A221E247245C902900AD0D86 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		A221E24A245C9C2E00AD0D86 /* UIModuleViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModuleViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +156,7 @@
 				A221E23D245C874900AD0D86 /* UIModuleViewLayout.h */,
 				A221E240245C878400AD0D86 /* UIModuleCollectionReusableViewLayout.h */,
 				A221E1D3245B1CA400AD0D86 /* UIModuleCollectionViewCellLayout.h */,
+				A221E24A245C9C2E00AD0D86 /* UIModuleViewDelegate.h */,
 				A221E204245B30BC00AD0D86 /* UIModuleMacro.h */,
 				A221E207245B319F00AD0D86 /* UIModule.h */,
 				A221E228245B438E00AD0D86 /* UIModuleHelper.h */,
